@@ -1,0 +1,117 @@
+.new-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    width: 90%;
+    margin-bottom: 140PX;
+
+}
+
+.tracking-in-contract-bck h2 {
+    font-size: 70px;
+    align-items: center;
+    text-align: center;
+    /* color: #cb1a1a; */
+    margin-bottom: 100PX;
+}
+
+.tracking-in-contract-bck {
+    -webkit-animation: tracking-in-contract-bck 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract-bck 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(400px);
+        transform: translateZ(400px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+
+.product-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,3fr));
+    gap: 1rem;
+}
+.product{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.product img{
+    
+    height: 100%;
+    width: 100%;
+    
+}
+.product-container .product:hover{
+    outline: .2rem solid #222;
+    outline-offset: 0;
+    
+}
+.product-container .product:hover img{
+    transform: scale(.9);
+}
+.cart{
+    width: 100%;
+    height: 100%;
+}
+
+.cart button{
+    background: #eca6db;
+    color: #090909;
+    border: 0;
+    border: 1px solid black;
+    outline: 0;
+    width: 200px;
+    height: 33px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+ 
+    
+}
+.cart button:hover{
+    background: #222;
+    color: #fff;
+    font-weight: 500;
+}

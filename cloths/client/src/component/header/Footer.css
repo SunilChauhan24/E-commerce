@@ -1,0 +1,11 @@
+/* Order.css */
+.footer-container {
+  position: relative;
+  min-height: 55vh; /* Ensure that the container takes at least the height of the viewport */
+}
+
+.bg-gray-800.text-gray-300 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

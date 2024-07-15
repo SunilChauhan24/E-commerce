@@ -1,0 +1,315 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    height: 90px;
+    z-index: 100;
+    box-shadow: 0px 10px 88px -23px rgba(0, 0, 0, 0.46)
+}
+
+.logo img {
+    width: 200px;
+
+}
+
+.bx {
+    margin: 4px;
+}
+
+.btnnn {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(191, 177, 177);
+}
+
+.icons1 {
+    padding: 25px 0px;
+
+}
+
+.icons1 i {
+    font-size: 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    padding-right: 20px;
+    position: relative;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav>ul>li {
+    padding: 30px 10px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #636262;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+nav>ul>li>a:hover {
+    color: #090909;
+    font-weight: 750;
+}
+
+.input-group {
+    padding: 20px 20px;
+    padding-left: 40px;
+
+}
+
+.input-group input {
+    width: 400px;
+    height: 35px;
+
+}
+
+.megamenu {
+    position: absolute;
+    top: 120%;
+    left: 14.5%;
+    right: 17%;
+    display: flex;
+    /* width: 1170px; */
+    /* height: 300px; */
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 5px black;
+    background-color: white;
+    transition: all 0.5s ease;
+
+}
+
+nav>ul>li:hover .megamenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.megamenuitems {
+    margin-left: 15px;
+}
+
+.megamenuitems h3 {
+
+    color: rgb(255, 42, 0);
+    margin: 5px;
+    font-size: 15px;
+}
+
+.megamenuitems ul {
+    margin-top: 10px;
+}
+
+.megamenuitems ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px;
+    color: #4f4e4e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.megamenuitems ul li link{
+    text-decoration: none;
+    list-style: none;
+}
+
+.megamenuitems ul li:hover {
+    color: #090909;
+    font-weight: 700;
+}
+
+.megamenuitems h5 {
+    color: rgb(255, 42, 0);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.megamenu-img {
+    max-width: 250px;
+    margin-left: 80px;
+
+}
+
+.megamenu-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.megamenuitems .women-color {
+    color: #f12fad;
+    font-size: 15px;
+}
+
+.megamenuwomen-img {
+    max-width: 600px;
+    margin: 20px;
+}
+
+.megamenuwomen-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.megamenuitems .kids-color {
+    color: #fd8930;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.megamenukids-img {
+    max-width: 410px;
+    margin: 20px;
+    margin-left: 20px;
+
+}
+
+.megamenukids-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.megamenuitems .Beauty-color {
+    color: #21abcd;
+    font-size: 15px;
+}
+
+.perfume {
+    margin-top: 20px;
+}
+
+.megamenubeauty-img {
+    max-width: 250px;
+    display: flex;
+    margin: 30px;
+    /* padding: 10px; */
+}
+
+.megamenubeauty-img img {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+.icons1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; /* Adjust the space between icons */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the icons */
+  .icons1 svg {
+    width: 30px; /* Adjust the size of the icons */
+    height: auto;
+    cursor: pointer;
+  }
+
+
+  .icons1 .dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icons1 .dropdown-container .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+     cursor: pointer;
+    list-style-type: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icons1 .dropdown-container:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .icons1 .dropdown-container .dropdown-menu li {
+    padding: 8px 12px;
+  }
+  
+  .icons1 .icon {
+    cursor: pointer;
+  }
+  
+
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .icons1 {
+      /* Modify layout for smaller screens */
+      flex-direction: column;
+      gap: 10px; /* Adjust space between icons */
+    }
+  
+    .icons1 svg {
+      width: 40px; /* Modify size for smaller screens */
+    }
+  }
+
+
+  .input-group {
+    display: flex;
+    align-items: center;
+    max-width: 600px; /* Adjust maximum width as needed */
+    margin: 0 20px auto; /* Center the input group */
+  }
+  
+  input[type="search"] {
+    flex: 1;
+    padding: 20px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    
+  }
+  
+  input[type="search"]::placeholder {
+    color: #999; /* Placeholder text color */
+  }
+  
+  button.btnnn {
+    margin-left: 10px; /* Adjust the space between input and button */
+    padding: 20px 20px;
+    background-color: #0c0d0d; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 4px;
+  }
+  
+  /* Responsive adjustments */
+  
+  
+  
+  
+  

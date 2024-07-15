@@ -1,0 +1,98 @@
+/* offer.css */
+
+/* Styling the main container */
+.container-fluid .offer {
+     /* Set a white background */
+    padding: 10px; /* Adjust padding as needed */
+  }
+ 
+  
+  /* Styling the offer content */
+  .position-relative {
+    position: relative;
+    height: 200px; /* Set a relative height */
+  }
+  
+  /* Styling the images */
+  .position-relative img {
+    width: 100%; /* Make images fill their containers */
+    height: 500px; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    transition: 1s ease;
+    
+  }
+  /* .position-relative img:hover{
+    transform: scale(1.0);
+    overflow: hidden;
+  } */
+  
+  /* Styling the text and buttons */
+  .position-relative h5{
+    font-size: 35px;
+    transform: translate(-20%,-600%);
+  }
+  .container-fluid h5{
+    color:rgb(109, 175, 109)
+  }
+  
+  
+  .container-fluid h1 {
+    font-size: 40px; /* Sample font size */
+     /* Adjust spacing */
+    color: #222;
+    transform: translate(-20%,-800%);
+  }
+  
+  .container-fluid .btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #d63838;
+    text-align: center;
+    /* vertical-align: middle; */
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 2;
+    transform: translate(-0,-90px);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .container-fluid .btn {
+    color: #D19C97;
+    border-color: #D19C97;
+  }
+  
+  .container-fluid .btn:hover {
+    color: #212529;
+    background-color: #D19C97;
+    border-color: #D19C97;
+  }
+  
+  .container-fluid .btn:focus, .btn.focus {
+    box-shadow: 0 0 0 0.2rem rgba(209, 156, 151, 0.5);
+  }
+  
+  .container-fluid .btn.disabled, .btn:disabled {
+    color: #D19C97;
+    background-color: transparent;
+  }
+  
+  .container-fluid .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active,
+  .show > .btn.dropdown-toggle {
+    color: #212529;
+    background-color: #D19C97;
+    border-color: #D19C97;
+  }
+  
+  .container-fluid .btn:not(:disabled):not(.disabled):active:focus, .btn:not(:disabled):not(.disabled).active:focus,
+  .show > .btn.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(209, 156, 151, 0.5);
+  }
+   
+  /* .btn:hover {
+    background-color: #df2323; 
+    color: #fff; 
+  } */
+  
